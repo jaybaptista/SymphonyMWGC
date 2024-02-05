@@ -23,20 +23,20 @@ def load_merger_tree(base, hid_root, fields=None):
 
     return res
 
-def getLastProgID(aux, base, hid_root, hid):
-    # spoofed readLastProgID function
+# def getLastProgID(aux, base, hid_root, hid):
+#     # spoofed readLastProgID function
 
-    dfid = symlib.read_tree(os.path.join(base, hid_root), ['dfid'])
+#     dfid = symlib.read_tree(os.path.join(base, hid_root), ['dfid'])
     
-    filename = os.path.join(aux, f"last_prog_id_{hid_root}.pkl")
-    last_prog_id = None
+#     filename = os.path.join(aux, f"last_prog_id_{hid_root}.pkl")
+#     last_prog_id = None
 
-    with open(filename, 'rb') as f:
-        last_prog_id_list = pickle.load(f)
-        dfid_idx = np.where(dfid == hid)[0][0]
-        last_prog_id = last_prog_id_list[dfid_idx]
+#     with open(filename, 'rb') as f:
+#         last_prog_id_list = pickle.load(f)
+#         dfid_idx = np.where(dfid == hid)[0][0]
+#         last_prog_id = last_prog_id_list[dfid_idx]
     
-    return last_prog_id
+#     return last_prog_id
 
 
 

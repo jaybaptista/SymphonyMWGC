@@ -20,7 +20,7 @@ setup(
     description = 'A post-processing model for globular cluster formation in cosmological simulations.',
     long_description = long_description,
     long_description_content_type = 'text/markdown',
-    install_requires = ['numpy', 'scipy', 'h5py'],
+    install_requires = ['numpy', 'scipy', 'h5py', 'mpmath'],
     python_requires = '>=3.8',
     classifiers = [
         'Programming Language :: Python :: 3',

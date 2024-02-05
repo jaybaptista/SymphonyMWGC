@@ -31,10 +31,10 @@ def run(params):
         omega_baryon=run_params['Ob'], omega_matter=run_params['Om'])
 
     form(run_params)
-    offset(run_params)
-    assign(run_params)
-    get_tid(run_params)
-    evolve(run_params)
+    # offset(run_params)
+    # assign(run_params)
+    # get_tid(run_params)
+    # evolve(run_params)
 
     if params['verbose']:
         print('\nModel was run on %d halo(s).\n'%len(params['subs']))
