@@ -15,7 +15,9 @@ def load_merger_tree(base, hid_root, fields=None):
             'MainLeafProgenitorID', 'NextProgenitorID', 'DescendantID', 
             'SubfindID', 'SubhaloPos', 'LastProgenitorID']
 
-    filename = base + 'merger_tree_%d.hdf5'%hid_root
+    # filename = base + 'merger_tree_%d.hdf5'%hid_root
+    
+    filename = base + 'merger_tree_Halo023.hdf5'%hid_root
 
     with h5py.File(filename, 'r') as f:
         for field in fields:
