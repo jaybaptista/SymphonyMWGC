@@ -64,7 +64,7 @@ def load_halo(base, hid_root, hid, snap, parttype, fields=None):
         res[field] = p[symphony_fields[field]]
 
     if parttype == "stars":
-        stars, gals, ranks = symlib.tag_stars(base, gal_halo)
+        stars, gals, ranks = symlib.tag_stars(base, gal_halo, target_subs=[hid])
         res['GFM_StellarFormationTime'] = stars['a_form']
     
     res['count'] = len(res['Coordinates'])
